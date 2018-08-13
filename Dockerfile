@@ -14,6 +14,6 @@ RUN sed -i 's/title Kibana/title Grad-mgda/g' /usr/share/kibana/src/ui/ui_render
 # custom plugin css
 COPY testing.zip /
 RUN sed -i "s/bundleFile('commons.style.css')/bundleFile('commons.style.css'),bundleFile('gradiant_style.style.css')/g" /usr/share/kibana/src/ui/ui_render/views/ui_app.jade
-RUN bin/kibana-plugin install https://github.com/Gradiant/Kibana-style-plugin/archive/v6.2.3.zip
+RUN bin/kibana-plugin install https://github.com/naveenkumart28/Kibana-style-plugin/archive/v6.3.2.zip
 
 
